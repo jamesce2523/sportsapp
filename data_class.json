@@ -1,0 +1,207 @@
+[
+    {
+        "pk": 1,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Nate Britt",
+            "number": "0",
+            "position": "Gaurd",
+            "hometown": "Upper Marlboro, MD",
+            "grade": "Sophomore",
+        }
+    },
+    {
+        "pk": 2,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Joel Berry II",
+            "number": "2",
+            "position": "Gaurd",
+            "hometown": "Apopka, FL",
+            "grade": "Freshman",
+        }
+    },
+    {
+        "pk": 3,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Luke Davis",
+            "number": "4",
+            "position": "Gaurd",
+            "hometown": "Raleigh, NC",
+            "grade": "Senior",
+        }
+    }
+    {
+        "pk": 4,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Luke Davis",
+            "number": "4",
+            "position": "Gaurd",
+            "hometown": "Raleigh, NC",
+            "grade": "Senior",
+        }
+    }
+    {
+        "pk": 5,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Marcus Paige",
+            "number": "5",
+            "position": "Gaurd",
+            "hometown": "Marion, IA",
+            "grade": "Junior",
+        }
+    }
+    {
+        "pk": 6,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Justin Coleman",
+            "number": "25",
+            "position": "Gaurd",
+            "hometown": "Raleigh, NC",
+            "grade": "Junior",
+        }
+    }
+    {
+        "pk": 7,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Spenser Dalton",
+            "number": "43",
+            "position": "Gaurd",
+            "hometown": "Asheville, NC",
+            "grade": "Junior",
+        }
+    }
+    {
+        "pk": 8,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Stilman White",
+            "number": "45",
+            "position": "Gaurd",
+            "hometown": "Wilmington, NC",
+            "grade": "Sophomore",
+        }
+    }
+    {
+        "pk": 9,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Theo Pinson",
+            "number": "1",
+            "position": "Forward/Gaurd",
+            "hometown": "Greensboro, NC",
+            "grade": "Freshman",
+        }
+    }
+    {
+        "pk": 10,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Justin Jackson",
+            "number": "44",
+            "position": "Forward/Gaurd",
+            "hometown": "Tomball, TX",
+            "grade": "Freshman",
+        }
+    }
+    {
+        "pk": 11,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Kennedy Meeks",
+            "number": "3",
+            "position": "Forward",
+            "hometown": "Charlotte, NC",
+            "grade": "Sophomore",
+        }
+    }
+    {
+        "pk": 12,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Brice Johnson",
+            "number": "11",
+            "position": "Forward",
+            "hometown": "Orangeburg, SC",
+            "grade": "Junior",
+        }
+    }
+    {
+        "pk": 13,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "J.P. Tokoto",
+            "number": "13",
+            "position": "Forward",
+            "hometown": "Menomonee Falls, WI",
+            "grade": "Junior",
+        }
+    }
+    {
+        "pk": 14,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Desmond Hubert",
+            "number": "14",
+            "position": "Forward",
+            "hometown": "Cream Ridge, NJ",
+            "grade": "Senior",
+        }
+    }
+    {
+        "pk": 15,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Jackson Simmons",
+            "number": "21",
+            "position": "Forward",
+            "hometown": "Webster, NC",
+            "grade": "Senior",
+        }
+    }
+    {
+        "pk": 16,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Isaiah Hicks",
+            "number": "21",
+            "position": "Forward",
+            "hometown": "Oxford, NC",
+            "grade": "Sophomore",
+        }
+    }
+    {
+        "pk": 17,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Sasha Seymore",
+            "number": "24",
+            "position": "Forward",
+            "hometown": "New Bern, NC",
+            "grade": "Senior",
+        }
+    }
+    {
+        "pk": 18,
+        "model": "basketball.Players",
+        "fields": {
+            "name": "Joel James",
+            "number": "42",
+            "position": "Forward",
+            "hometown": "West Palm Beach, FL",
+            "grade": "Junior",
+        }
+    }
+
+
+
+
+
+
+
+    ]
