@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<p>This is the player view.</p>
+    <h1> {{player.name}} {{player.number}} <h1>
+    <ul>
+    	<li>Position: {{player.position}}</li> 
+    	<li>Hometown: {{player.hometown}}</li>
+    	<li>Grade: {{player.grade}}</li>
+    </ul>
+
+    
+
+{% endblock content %}
