@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
 from django.contrib import admin
-from roster.models import Team
+from basketball.models import Team, Player
 
-class TeamAdmin(admin.ModelAdmin):
-	search_fields = ('name',)
+admin.site.register(Team)
+admin.site.register(Player)
 
-admin.site.register(Team, TeamAdmin)
+
+

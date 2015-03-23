@@ -13,20 +13,19 @@ class Team(models.Model):
 	def __unicode__(self):
 		return self.name
 
-	def save(self, *args, **kwargs):
-		self.name = self.name.upper()
-		super(Team, self).save(*args, **kwargs)
-
 #Players Model
-class Players(models.Model):
-	name = models.CharField(unique=False, max_length=50)
-	number = models.CharField(unique=True, max_length=2, null=True)
-	position = models.CharField (unique=True, max_length=50)
-	hometown = models.CharField (unique=True, max_length=50)
-	grade = models.CharField (unique=True, max_length=50, null=True)
+class Player(models.Model):
+	name = models.CharField(max_length=50)
+	number = models.IntegerField(unique=True)
+	position = models.CharField (max_length=50)
+	hometown = models.CharField (max_length=50)
+	grade = models.CharField (max_length=50)
+
+	team = models.ForeignKey('Team', related_name='players')
 
 	class Meta(object):
 		ordering = ('number', 'name')
 
 		def __unicode__(self):
 			return u'%s %s' %(self.name, self.number)
+
