@@ -4,7 +4,8 @@ from django.db import models
 
 #Team Model
 class Team(models.Model):
-	name = models.CharField(unique=True, max_length=50)
+	name = models.CharField(max_length=50)
+	gender = models.CharField(max_length=1)
 
 	class Meta(object):
 		verbose_name_plural = "Teams"
@@ -16,10 +17,11 @@ class Team(models.Model):
 #Players Model
 class Player(models.Model):
 	name = models.CharField(max_length=50)
-	number = models.IntegerField(unique=True)
+	number = models.IntegerField()
 	position = models.CharField (max_length=50)
 	hometown = models.CharField (max_length=50)
 	grade = models.CharField (max_length=50)
+	avatar = models.CharField (max_length=255, default="")
 
 	team = models.ForeignKey('Team', related_name='players')
 

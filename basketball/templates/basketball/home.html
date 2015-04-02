@@ -1,9 +1,35 @@
 {% extends "base.html"%}
+{% load static from staticfiles %}
+
+
+{% block background %}
+	background="{% static 'background.jpg' %}"
+{% endblock %}
 
 {% block content %}
-		<p>This is the home view.</p>
-		{% for team in teams %}
-		<a href="{% url 'team' team.id %}">Men's Basketball</a>
-		{%endfor%}
+<div class="row">
+	<div class="col-md-6">
+	<div class="mens">
+		<h2>Men's Teams</h2>
+		
+		<ul class="team-list">
+			{% for team in male_teams %}
+			<li><a href="{% url 'team' team.id %}">{{team.name}}</a></li>
+			{%endfor%}
+		</ul>
+	</div>
+	</div>
+
+	<div class="col-md-6">
+	<div class="womens">
+		<h2>Women's Teams</h2>
+		<ul class="team-list">
+			{% for team in female_teams %}
+			<li><a href="{% url 'team' team.id %}">{{team.name}}</a></li>
+			{%endfor%}
+		</ul>
+	</div>
+</div>
+</div>
 		
 {% endblock %}

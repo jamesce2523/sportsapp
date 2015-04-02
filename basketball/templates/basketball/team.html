@@ -1,10 +1,45 @@
 {% extends 'base.html' %}
+{% load static from staticfiles %}
+
 
 {% block content %}
-    <h1>Players</h1>
-    <ul>
-        {% for player in players %}
-            <li><a href="{% url 'player' player.id %}">{{ player.name }}</a> | {{player.number }}</li>
-        {% endfor %}
-    </ul>
+<div class="row">
+	<div class="col-md-3">
+	<div class="playerslist">
+
+    	<h3>Players</h3>
+    	<ul id="team">
+        	{% for player in players %}
+            	<li><a href="{% url 'player' player.id %}">{{ player.name }}</a> | {{player.number }}</li>
+        	{% endfor %}
+    	</ul>
+ 	</div>
+ 	</div>
+ 
+ 	<div class="col-md-9">
+    {% if team.name.lower == 'basketball' and team.gender == 'm' %}
+		<div id="teamphoto">
+    		<img src="{% static 'team.jpg' %}" alt="Team Photo">
+    		<div id="caption"><p>Front Row: Director of Player Relations, Video Coordinator Eric Hoots, Athletics Trainer Doug Halverson, Assistant Coach C.B. McGrath, Head Coach Roy Williams, Theo Pinson, J.P. Tokoto, Nate Britt, Marcus Paige, Luke Davis, Stilman White, Joel Berry II, Assistant Coach Steve Robinson, Assistant Coach Hubert Davis, Director of Basketball Operations Brad Frederick, Director of Strength and Conditioning, Jonas Sahratian.
+
+Back Row: Manager Sam Rardin, Manager Maggie Boulton, Head Manager Richie LaGrotta, Sasha Seymore, Jackson Simmons, Brice Johnson, Kennedy Meeks, Joel James, Desmond Hubert, Isaiah Hicks, Justin Jackson, Justin Coleman, Manager Chase Bengel, Forrest Reynolds, Maria Vanderford</p></div>
+    	</div>
+
+    {% elif team.name.lower == 'basketball' and team.gender == 'f' %}
+    	<div id="teamphoto">
+    		<img src="{% static 'team2.jpg' %}" alt="Team Photo">
+    		<div id="caption"><p>2014-2015 Women's Basketball Team</p>
+    		</div>
+    	</div>
+
+	{% endif %}
+    
+</div>
+</div>
+
+	<div id="return">
+    	<a href="{% url 'home' %}">View All Teams</a>
+    </div>
+
+
 {% endblock %}

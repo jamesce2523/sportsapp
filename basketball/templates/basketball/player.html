@@ -1,13 +1,36 @@
 {% extends 'base.html' %}
 
 {% block content %}
-	<p>This is the player view.</p>
-    <h1> {{player.name}} {{player.number}} <h1>
-    <ul>
-    	<li>Position: {{player.position}}</li> 
-    	<li>Hometown: {{player.hometown}}</li>
-    	<li>Grade: {{player.grade}}</li>
-    </ul>
+<div class="row">
+	<div class="col-md-4">
+	<div id="player">	
+    	<h3> {{player.name}} | {{player.number}} </h3>
+    	<ul class="player">
+    		<li><strong>Position:</strong> {{player.position}}</li> 
+    		<li><strong>Hometown:</strong>  {{player.hometown}}</li>
+    		<li><strong>Grade:</strong>  {{player.grade}}</li>
+    	</ul>
+    </div>
+	</div>
+    
+    <div class="col-md-8">
+    <div id="player-photo">
+    	<img src="{{ player.avatar }}">
+    </div>
+	</div>
+</div>
+		
+		<div id="return">
+			Go back to
+
+			{% if player.team.gender == 'm' %}
+				Men's
+			{% else %}
+				Women's
+			{% endif %}
+			<a href="{% url 'team' player.team.id %}">{{ player.team.name }}</a>
+		</div>
+    
 
     
 

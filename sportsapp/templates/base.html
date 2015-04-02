@@ -7,9 +7,23 @@
 	<head>
 		<title>{% block title %}Sports App Project{% endblock %}</title>
 		<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 	</head>
 
-	<body>
+	<body {% block background %}{% endblock %}>
+
+
+	<div class="logo">
+		<a href="{% url 'home' %}">
+			<img src="{% static 'logo1.png' %}" alt="UNC logo">
+			<img src="{% static 'logo2.png' %}" alt="Go Heels Logo">
+		</a>
+	</div>
+
+
+	
+
+
 
 
 
