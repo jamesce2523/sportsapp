@@ -1,0 +1,136 @@
+.logo {
+	padding:10pt;
+	padding-left:30pt;
+}
+
+
+.navigation ul {
+	list-style-type: none;
+	text-align: center;
+	font-family:arial;
+	font-size:14pt;
+	font-weight:lighter;
+	
+}
+
+.navi li {
+	list-style-type: none;
+	display: inline;
+	padding:10px;
+}
+
+.navi li a {
+	color: white;
+	background-color: #56A0D3;
+	opacity:0.8;
+	border-radius: 5px;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.navigation {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+
+h2 {
+	font-size:18pt;
+	color:white;
+	padding-left:35px;
+	padding-top:20px;
+	padding-bottom:10px;
+	font-style:sans-serif;
+	font-family:arial;
+}
+
+.mens {
+	background-color:#56A0D3;
+	opacity:0.9;
+	padding-bottom:10px;
+	border-radius:5px;
+	font-family:arial;
+}
+
+.womens {
+	background-color:#56A0D3;
+	opacity:0.9;
+	padding-bottom:10px;
+	border-radius:5px;
+	font-family:arial;
+}
+
+.team-list li {
+	list-style-type:none;
+	padding-bottom:10px;
+}
+
+.team-list li a {
+	color: white;
+	text-decoration:none;
+}
+
+
+.player li {
+	list-style-type: none;
+	font-family:arial;
+	font-size:12pt;
+	font-weight:lighter;
+	padding-top:20px;
+	padding-bottom:20px;
+	color:#56A0D3;
+}
+
+#team li {
+	list-style-type: none;
+	font-family:arial;
+	font-size:10pt;
+	font-weight:lighter;
+	text-decoration:none;
+	padding-bottom:5pt;
+}
+
+#team li a{
+	text-decoration:none;
+	color:black;
+}
+
+h3 {
+	padding-left:40px;
+	padding-top:20pt;
+	color:#56A0D3;
+}
+
+#teamphoto img{
+	float:center;
+	height:95%;
+	width:95%;
+	padding-top:45px;
+	padding-bottom:10pt;
+}
+
+#caption p{
+	font-size:9pt;
+	
+}
+
+#return {
+	float:right;
+}
+
+#return a{
+	text-decoration: none;
+	color:black;
+}
+
+
+#player-photo {
+	padding:10px;
+	padding-top:40pt;
+}
+
+
+
+
+
+
